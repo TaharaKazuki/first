@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { CardList } from './component/cardList/index.jsx'
 import { SearchField } from './component/searchField/index.jsx'
 
+import './App.css'
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -27,6 +29,7 @@ class App extends Component {
     )
     return (
       <div className='App'>
+        <h1 className="title">Monster rolodex</h1>
         <SearchField onChange={this.handlerSearch}/>
         <CardList monsterList={filterMonsters}/>
       </div>
